@@ -2,13 +2,164 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Test Inteco</title>
+    <title>Profile Page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
 
   <body>
-    
+    <header>
+      <nav class="header-menu container">
+        <a href="#" class="header-menu__back-up-button">
+          <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.88864 -9.7158e-08C9.17308 -7.22918e-08 9.45752 0.10413 9.67418 0.311327C10.1086 0.726784 10.1086 1.39832 9.67418 1.81377L2.68215 8.49934L9.67418 15.186C10.1075 15.6014 10.1075 16.273 9.67418 16.6884C9.23974 17.1039 8.53643 17.1039 8.102 16.6884L0.325545 9.25056C0.116662 9.05186 -1.18891e-06 8.78197 -1.1642e-06 8.49934C-1.13949e-06 8.2167 0.116662 7.94681 0.325545 7.74811L8.10311 0.311327C8.31977 0.10413 8.60421 -1.22024e-07 8.88864 -9.7158e-08Z" fill="white"/>
+            </svg>
+          Вернуться назад
+        </a>
+        <ul class="header-menu__list">
+          <li class="header-menu__item search">
+            <a href="#">Поиск</a>
+          </li>
+          <li class="header-menu__item language">
+            <a href="#">En</a>
+          </li>
+          <li class="header-menu__item exit">
+            <a href="#">Выход</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="page-title visually-hidden">Профиль арендодателя</h1>
+
+      <section class="banner">
+        <h2 class="visually-hidden">Проверенное жилье по всему миру</h2>
+        <div class="banner__caption container">
+          <p class="banner__small-caption">Проверенное жилье</p>
+          <p class="banner__biggest-caption">по всему миру</p>
+        </div>
+      </section>
+
+      <section class="main-block container">
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a href="#">Новости</a>
+          </li>
+          <li class="main-menu__item main-menu__item--active">
+            <a href="#">Персональная информация</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Документы</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Календарь</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Сообщения</a>
+          </li>
+        </ul>
+
+        <div class="content-item">
+          <div class="content-item__personal-info">
+            <ul class="personal-info__menu">
+              <li class="personal-info__item">
+                <button>Основная информация</button>
+              </li>
+              <li class="personal-info__item personal-info__item--active">
+                <button>Документы арендодателя</button>
+              </li>
+              <li class="personal-info__item">
+                <button>Отзывы квартиросъемщиков</button>
+              </li>
+            </ul>
+
+            <div class="personal-info__block personal-info__main-info">
+              Здесь содержиться контент, относящийся ко вкладке с основной информацией
+            </div>
+
+            <div class="personal-info__block personal-info__clients-docs personal-info__block--active">
+              <ul class="personal-info__docs-list">
+                <li class="personal-info__document">
+                  <p class="document-title">Паспорт гражданина РФ 0000 111111</p>
+                  <p class="document-note">
+                    <strong>Кем выдан:</strong> выдан ОУФМС РФ по Краснодарскому краю 
+                    в Центральном округе г.Сочи
+                  </p>
+                  <p class="document-note">
+                    <strong>Код подразделения:</strong> 000000
+                  </p>
+                  <p class="document-note">
+                    <strong>Дата выдачи:</strong> 05.01.2006 
+                  </p>
+                  <div class="edit-buttons">
+                    <button class="edit-botton">Редактировать</button>
+                    <button class="delete-button">Удалить</button>
+                  </div>
+                </li>
+                <li class="personal-info__document">
+                  <p class="document-title">Свидетельство о праве собственности</p>
+                  <p class="document-note">
+                    <strong>Кем выдан:</strong> Управление Федеральной службы государственной регистрации, кадастра и картографии 
+                  </p>
+                  <p class="document-note">
+                    <strong>Адрес:</strong> РФ, г. Сочи, ул. Сочинская 57
+                  </p>
+                  <p class="document-note">
+                    <strong>Дата выдачи:</strong> 10.03.2014 </p>
+                  <div class="edit-buttons">
+                    <button class="edit-botton">Редактировать</button>
+                    <button class="delete-button">Удалить</button>
+                  </div>
+                </li>
+                <li class="personal-info__document">
+                  <p class="document-title">Кадастровый паспорт</p>
+                  <p class="document-note">
+                    <strong>Кем выдан:</strong> Федеральная кадастровая палата Федеральной службы государственной регистрации 
+                  </p>
+                  <p class="document-note">
+                    <strong>Адрес:</strong> РФ, г. Сочи, ул. Красноармейская 9
+                  </p>
+                  <p class="document-note">
+                    <strong>Дата выдачи:</strong> 10.03.2014 
+                  </p>
+                  <div class="edit-buttons">
+                    <button class="edit-botton">Редактировать</button>
+                    <button class="delete-button">Удалить</button>
+                  </div>
+                </li>
+                <li class="personal-info__document personal-info__document--loading">
+                  <p class="document-title">Заверенная доверенность</p>
+                  <a href="#" class="stop-loading-button">Прервать загрузку</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="personal-info__block personal-info__reviews">
+              Здесь содержиться контент, относящийся ко вкладке с отзывами
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="profile__content">
+            Профиль
+          </div>
+          <button>Редактировать профиль</button>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
