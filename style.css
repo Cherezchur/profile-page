@@ -1,0 +1,232 @@
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+  
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
+
+.container {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 1250px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.container button {
+    background-color: transparent;
+    border: none;
+}
+
+.container ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container h3 {
+    font-size: 24px;
+    color: #4764b0;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 7px;
+}
+
+.container h4 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.main {
+    background-color: #f5f0f0;
+}
+
+.header {
+    margin-top: 23px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.about-us {
+    position: relative;
+}
+
+.about-us::before {
+   content: "";
+
+   position: absolute;
+   left: 3%;
+   height: 100%;
+   width: 1px;
+   background-color: rgba(1,1,1,0.1);
+
+   /* draw behind child elements */
+   z-index: 1;
+}
+
+.about-us::after {
+    content: "";
+ 
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    height: 1px;
+    width: 97%;
+    background-color: rgba(1,1,1,0.1);
+ 
+    /* draw behind child elements */
+    z-index: 1;
+ }
+
+.about-us__company-description {
+}
+
+.our-project {
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.our-project__caption {
+    padding-top: 13px;
+}
+
+.company-description__image,
+.our-project__image {
+    display: flex;
+    width: 280px;
+    height: 174px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-description__image {
+    margin-left: auto;
+}
+
+.our-project__image {
+    margin-right: auto;
+}
+
+.our-project__slider {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.our-project__projects-container {
+    width: 900%;
+    display: flex;
+    overflow: hidden;
+}
+
+.our-project__project {
+    width: 330px;
+}
+
+.our-project__paginations {
+    position: absolute;
+    width: 134px;
+    height: 10px;
+    top: 120px;
+    left: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.our-project__paginations .our-project__pagination {
+    padding: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.our-project__paginations .our-project__pagination--active {
+    width: 10px;
+    height: 10px;
+} 
+
+.company-description__container,
+.our-project__container {
+    padding: 14px 20px;
+    padding-bottom: 37px;
+    margin-top: -40px;
+    width: 240px;
+    height: auto;
+
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.our-project__container {
+    margin-left: auto;
+    margin-top: -30px;
+    padding: 13px 20px;
+}
+
+.our-project__container h4 {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.our-project__project .our-project__description-container {
+    margin-top: -5px;
+}
+
+.company-description__description-company {
+    padding-top: 8px;
+}
+
+.company-description__description {
+    margin: 0;
+    padding-top: 9px;
+}
+
+.about-us__our-projects {
+    padding-bottom: 18px;
+}
+
+.about-us__our-project {
+    padding-top: 15px;
+    padding-left: 30px;
+}
+
+@media (min-width: 330px) {
+    .container {
+        width: 91%;
+    }
+}
+
+@media (min-width: 700px) {
+    .container {
+        width: 610px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container {
+        width: 930px;
+    }
+}
+
+@media (min-width: 1340px) {
+    .container {
+        width: 1250px;
+    }
+}
