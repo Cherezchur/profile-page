@@ -204,6 +204,10 @@ header a:focus {
     width: 670px;
 }
 
+.personal-info__docs-list {
+    padding-bottom: 30px;
+}
+
 .personal-info__menu {
     display: flex;
     justify-content: space-evenly;
@@ -235,7 +239,7 @@ header a:focus {
     display: none;
     width: 430px;
     padding-left: 100px;
-    padding-top: 54px;
+    padding-top: 40px;
 }
 
 .personal-info__block p {
@@ -246,6 +250,22 @@ header a:focus {
 .personal-info__document {
     position: relative;
     padding-bottom: 33px;
+}
+
+.personal-info__document p {
+    margin: 0;
+}
+
+.personal-info__document .document-title {
+    margin-bottom: 10px;
+}
+
+.personal-info__document .document-note {
+    margin-bottom: 6px;
+}
+
+.personal-info__document .edit-buttons {
+    margin-top: 14px;
 }
 
 .personal-info__document::before {
@@ -278,7 +298,7 @@ header a:focus {
     background-repeat: no-repeat;
 }
 
-.personal-info__document--loading p {
+.personal-info__document--loading .document-title {
     position: relative;
     margin: 0;
     margin-right: 35px;
@@ -338,6 +358,61 @@ header a:focus {
 
 .profile {
     width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile__content {
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 59px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.profile__content p {
+    margin: 0;
+}
+
+.profile__content .profile__avatar {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile__content .profile__status {
+    font-size: 16px;
+    line-height: 20px;
+    color: #0080FF;
+    margin-bottom: 5px;
+}
+
+.profile__content .profile__name {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+.profile__content .profile__info {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+
+.profile__info .profile__info-title {
+    margin-bottom: 3px;
+}
+
+.profile__edit-button {
+    height: 60px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+
+    background: radial-gradient(100.83% 100.83% at 50.16% 132.5%, #00D1FF 0%, rgba(0, 209, 255, 0) 100%), #0066CC;
+    border-radius: 10px;
 }
 
 footer {
