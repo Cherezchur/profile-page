@@ -203,7 +203,7 @@ header a:focus {
     margin-right: 20px;
 }
 
-.content-item__personal-info {
+.content-item__container {
     background-color: white;
     border-radius: 10px;
     width: 670px;
@@ -562,4 +562,120 @@ footer {
     background: #FFFFFF;
     border-radius: 3px;
     color: #3B89D6;
+}
+
+.avatar-editing__block {
+    display: block;
+    padding: 40px;
+}
+
+.avatar-editing__title {
+    margin: 0;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #0066CC;
+}
+
+.avatar-editing__caption {
+    font-size: 16px;
+    line-height: 24px;
+    color: #354052;
+    opacity: 0.6;
+}
+
+.avatar-editing__upload-fields {
+    display: flex;
+}
+
+.avatar-editing__field-title {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.avatar-editing__field-label {
+    position: relative;
+}
+
+.avatar-editing__upload-avatar {
+    margin-right: 64px;
+}
+
+.avatar-editing__avatar,
+.avatar-editing__cover {
+    display: none;
+}
+
+.avatar-editing__upload-avatar .avatar-editing__field-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 145px;
+    height: 155px;
+    background: #F2F5F5;
+    background-image: url(image/ava.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border: 1px solid #DFE6E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.avatar-editing__upload-avatar .avatar-editing__field-label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 145px;
+    height: 155px;
+
+    background-image: url(image/big-preloader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar-editing__upload-cover .avatar-editing__field-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 335px;
+    height: 155px;
+    background: #F2F5F5;
+    background-image: url(image/input.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #DFE6E6;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.avatar-editing__upload-cover .avatar-editing__field-label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 335px;
+    height: 155px;
+
+    background-image: url(image/big-preloader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar-editing__button {
+    margin-top: 185px;
+    width: 270px;
+    height: 60px;
+    background: radial-gradient(100.83% 100.83% at 50.16% 132.5%, #00D1FF 0%, rgba(0, 209, 255, 0) 100%), #0066CC;
+    border-radius: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
 }

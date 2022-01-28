@@ -67,7 +67,7 @@
         </ul>
 
         <div class="content-item">
-          <div class="content-item__personal-info">
+          <div class="content-item__personal-info content-item__container">
             <ul class="personal-info__menu">
               <li class="personal-info__item">
                 <button>Основная информация</button>
@@ -144,6 +144,32 @@
             <div class="personal-info__block personal-info__reviews">
               Здесь содержиться контент, относящийся ко вкладке с отзывами
             </div>
+          </div>
+
+          <div class="avatar-editing content-item__container">
+            <div class="avatar-editing__block">
+              <h3 class="avatar-editing__title">Аватар и обложка</h3>
+              <p class="avatar-editing__caption">
+                Загрузите изображения для аватара и обложки вашей домашней страницы. Так вам будет легче найти новых друзей. Результат ваших действий вы сможете увидеть наверху страницы. 
+              </p>
+              <div class="avatar-editing__upload-fields">
+                <div class="avatar-editing__upload-avatar">
+                  <p class="avatar-editing__field-title">Фото на аватар</p>
+                  <label class="avatar-editing__field-label" for="upload-avatar"></label>
+                  <input class="avatar-editing__avatar visually-hidden" type="file" name="upload-avatar" id="upload-avatar">
+                </div>
+                <div class="avatar-editing__upload-cover">
+                  <p class="avatar-editing__field-title">Обложка персональной страницы</p>
+                  <label class="avatar-editing__field-label" for="upload-cover"></label>
+                  <input class="avatar-editing__cover visually-hidden" type="file" name="upload-cover" id="upload-cover">
+                </div>
+              </div>
+              <button class="avatar-editing__button" type="button">Сохранить изменения</button>
+            </div>
+          </div>
+
+          <div class="content-item__container">
+            Личные данные
           </div>
         </div>
 
@@ -303,7 +329,6 @@
               </p>
               <button type="submit" class="footer__submit">Отправить</button>
             </div>
-            
           </form>
         </div>
       </div>
