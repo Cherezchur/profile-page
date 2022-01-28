@@ -161,6 +161,7 @@ header a:focus {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 53px;
+    padding-bottom: 80px;
 
     color: #555555;
 }
@@ -196,6 +197,10 @@ header a:focus {
 
 .main-menu__item {
     margin-bottom: 20px;
+}
+
+.content-item {
+    margin-right: 20px;
 }
 
 .content-item__personal-info {
@@ -416,5 +421,145 @@ header a:focus {
 }
 
 footer {
+    background-color: rgba(0, 102, 204, 0.76);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    color: white;
+    /* font-family: 'Proxima Nova Thin'; */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer__column-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.about-us__item {
+    margin-bottom: 20px;
+}
+
+.about-us__item a {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.about-us__caption {
     font-family: 'Proxima Nova Thin';
+    font-size: 12px;
+    line-height: 32px;
+}
+
+.footer__about-site {
+    margin-bottom: 60px;
+}
+
+.about-site__title,
+.mobile__title,
+.footer__title {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+}
+
+.about-site__container-list {
+    margin-top: 20px;
+}
+
+.about-site__item a,
+.social__title,
+.mobile__caption {
+    font-family: 'Proxima Nova Thin';
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+}
+
+.footer .social__title {
+    width: 110px;
+    margin-bottom: 12px;
+}
+
+.social__list {
+    display: flex;
+}
+
+.social__item {
+    margin-right: 13px;
+}
+
+.footer .mobile__caption {
+    margin-top: 20px;
+    width: 190px;
+}
+
+.mobile__item {
+    margin-bottom: 10px;
+}
+
+.mobile__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer__form-container {
+    width: 269px;
+    margin-top: 20px;
+}
+
+.footer__form-container input,
+.footer__form-container textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none;
+
+    padding: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+}
+
+.footer__form-container textarea {
+    resize: none;
+}
+
+.footer__form-container input::placeholder,
+.footer__form-container textarea::placeholder {
+    font-family: 'Proxima Nova Thin';
+    font-size: 14px;
+    line-height: 36px;
+    color: white;
+    opacity: 0.5;
+}
+
+.footer .footer__concept-caption {
+    margin-top: 10px;
+    font-family: 'Proxima Nova Thin';
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 0.5;
+}
+
+.footer__submit {
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    color: #3B89D6;
 }
