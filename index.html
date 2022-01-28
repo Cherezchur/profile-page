@@ -38,6 +38,7 @@
       <h1 class="page-title visually-hidden">Профиль арендодателя</h1>
 
       <section class="banner">
+        <h2 class="visually-hidden">Проверенное жилье по всему миру</h2>
         <div class="banner__caption container">
           <p class="banner__small-caption">Проверенное жилье</p>
           <p class="banner__biggest-caption">по всему миру</p>
@@ -45,6 +46,7 @@
       </section>
 
       <section class="main-block container">
+        <h2 class="visually-hidden">Главный блок с персональной информацией и контентом</h2>
         <ul class="main-menu">
           <li class="main-menu__item">
             <a href="#">Новости</a>
@@ -66,204 +68,205 @@
           </li>
         </ul>
 
-        <div class="content-item">
-          <div class="content-item__personal-info content-item__container">
-            <ul class="personal-info__menu">
-              <li class="personal-info__item">
-                <button>Основная информация</button>
-              </li>
-              <li class="personal-info__item personal-info__item--active">
-                <button>Документы арендодателя</button>
-              </li>
-              <li class="personal-info__item">
-                <button>Отзывы квартиросъемщиков</button>
-              </li>
-            </ul>
-
-            <div class="personal-info__block personal-info__main-info">
-              Здесь содержиться контент, относящийся ко вкладке с основной информацией
-            </div>
-
-            <div class="personal-info__block personal-info__clients-docs personal-info__block--active">
-              <ul class="personal-info__docs-list">
-                <li class="personal-info__document">
-                  <p class="document-title">Паспорт гражданина РФ 0000 111111</p>
-                  <p class="document-note">
-                    <strong>Кем выдан:</strong> выдан ОУФМС РФ по Краснодарскому краю 
-                    в Центральном округе г.Сочи
-                  </p>
-                  <p class="document-note">
-                    <strong>Код подразделения:</strong> 000000
-                  </p>
-                  <p class="document-note">
-                    <strong>Дата выдачи:</strong> 05.01.2006 
-                  </p>
-                  <div class="edit-buttons">
-                    <button class="edit-botton">Редактировать</button>
-                    <button class="delete-button">Удалить</button>
-                  </div>
-                </li>
-                <li class="personal-info__document">
-                  <p class="document-title">Свидетельство о праве собственности</p>
-                  <p class="document-note">
-                    <strong>Кем выдан:</strong> Управление Федеральной службы государственной регистрации, кадастра и картографии 
-                  </p>
-                  <p class="document-note">
-                    <strong>Адрес:</strong> РФ, г. Сочи, ул. Сочинская 57
-                  </p>
-                  <p class="document-note">
-                    <strong>Дата выдачи:</strong> 10.03.2014 </p>
-                  <div class="edit-buttons">
-                    <button class="edit-botton">Редактировать</button>
-                    <button class="delete-button">Удалить</button>
-                  </div>
-                </li>
-                <li class="personal-info__document">
-                  <p class="document-title">Кадастровый паспорт</p>
-                  <p class="document-note">
-                    <strong>Кем выдан:</strong> Федеральная кадастровая палата Федеральной службы государственной регистрации 
-                  </p>
-                  <p class="document-note">
-                    <strong>Адрес:</strong> РФ, г. Сочи, ул. Красноармейская 9
-                  </p>
-                  <p class="document-note">
-                    <strong>Дата выдачи:</strong> 10.03.2014 
-                  </p>
-                  <div class="edit-buttons">
-                    <button class="edit-botton">Редактировать</button>
-                    <button class="delete-button">Удалить</button>
-                  </div>
-                </li>
-                <li class="personal-info__document personal-info__document--loading">
-                  <p class="document-title">Заверенная доверенность</p>
-                  <a href="#" class="stop-loading-button">Прервать загрузку</a>
-                </li>
+        <div class="content-items">
+          <div class="content-item">
+            <div class="content-item__personal-info content-item__container">
+              <ul class="personal-info__menu">
+                <li class="personal-info__item" data-id="0">Основная информация</li>
+                <li class="personal-info__item personal-info__item--active" data-id="1">Документы арендодателя</li>
+                <li class="personal-info__item" data-id="2">Отзывы квартиросъемщиков</li>
               </ul>
+  
+              <div class="personal-info__block personal-info__main-info">
+                Здесь содержиться контент, относящийся ко вкладке с основной информацией
+              </div>
+  
+              <div class="personal-info__block personal-info__clients-docs personal-info__block--active">
+                <ul class="personal-info__docs-list">
+                  <li class="personal-info__document">
+                    <p class="document-title">Паспорт гражданина РФ 0000 111111</p>
+                    <p class="document-note">
+                      <strong>Кем выдан:</strong> выдан ОУФМС РФ по Краснодарскому краю 
+                      в Центральном округе г.Сочи
+                    </p>
+                    <p class="document-note">
+                      <strong>Код подразделения:</strong> 000000
+                    </p>
+                    <p class="document-note">
+                      <strong>Дата выдачи:</strong> 05.01.2006 
+                    </p>
+                    <div class="edit-buttons">
+                      <button class="edit-botton">Редактировать</button>
+                      <button class="delete-button">Удалить</button>
+                    </div>
+                  </li>
+                  <li class="personal-info__document">
+                    <p class="document-title">Свидетельство о праве собственности</p>
+                    <p class="document-note">
+                      <strong>Кем выдан:</strong> Управление Федеральной службы государственной регистрации, кадастра и картографии 
+                    </p>
+                    <p class="document-note">
+                      <strong>Адрес:</strong> РФ, г. Сочи, ул. Сочинская 57
+                    </p>
+                    <p class="document-note">
+                      <strong>Дата выдачи:</strong> 10.03.2014 </p>
+                    <div class="edit-buttons">
+                      <button class="edit-botton">Редактировать</button>
+                      <button class="delete-button">Удалить</button>
+                    </div>
+                  </li>
+                  <li class="personal-info__document">
+                    <p class="document-title">Кадастровый паспорт</p>
+                    <p class="document-note">
+                      <strong>Кем выдан:</strong> Федеральная кадастровая палата Федеральной службы государственной регистрации 
+                    </p>
+                    <p class="document-note">
+                      <strong>Адрес:</strong> РФ, г. Сочи, ул. Красноармейская 9
+                    </p>
+                    <p class="document-note">
+                      <strong>Дата выдачи:</strong> 10.03.2014 
+                    </p>
+                    <div class="edit-buttons">
+                      <button class="edit-botton">Редактировать</button>
+                      <button class="delete-button">Удалить</button>
+                    </div>
+                  </li>
+                  <li class="personal-info__document personal-info__document--loading">
+                    <p class="document-title">Заверенная доверенность</p>
+                    <a href="#" class="stop-loading-button">Прервать загрузку</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="personal-info__block personal-info__reviews">
+                Здесь содержиться контент, относящийся ко вкладке с отзывами
+              </div>
             </div>
-
-            <div class="personal-info__block personal-info__reviews">
-              Здесь содержиться контент, относящийся ко вкладке с отзывами
+  
+            <div class="avatar-editing content-item__container">
+              <form class="avatar-editing__block">
+                <fieldset>
+                  <legend class="avatar-editing__title">Аватар и обложка</legend>
+                  <p class="avatar-editing__caption">
+                    Загрузите изображения для аватара и обложки вашей домашней страницы. Так вам будет легче найти новых друзей. Результат ваших действий вы сможете увидеть наверху страницы. 
+                  </p>
+                  <div class="avatar-editing__upload-fields">
+                    <div class="avatar-editing__upload-avatar">
+                      <p class="avatar-editing__field-title">Фото на аватар</p>
+                      <label class="avatar-editing__field-label" for="upload-avatar"></label>
+                      <input class="avatar-editing__avatar visually-hidden" type="file" name="upload-avatar" id="upload-avatar">
+                    </div>
+                    <div class="avatar-editing__upload-cover">
+                      <p class="avatar-editing__field-title">Обложка персональной страницы</p>
+                      <label class="avatar-editing__field-label" for="upload-cover"></label>
+                      <input class="avatar-editing__cover visually-hidden" type="file" name="upload-cover" id="upload-cover">
+                    </div>
+                  </div>
+                  <button class="avatar-editing__button" type="button">Сохранить изменения</button>
+                </fieldset>
+              </form>
+            </div>
+  
+            <div class="info-editing content-item__container">
+              <form class="info-editing__block">
+                <fieldset>
+                <legend class="info-editing__title">Личные данные</legend>
+                  <div class="info-editing__name">
+                    <label for="name">Фамилия/ Имя / Отчество</label>
+                    <input type="text" id="name" placeholder="Иванова Елена Павловна">
+                  </div>
+                  <div class="info-editing__site-name">
+                    <label for="site-name">Имя на сайте</label>
+                    <input type="text" id="site-name" placeholder="Elena Pavlovna">
+                  </div>
+                  <div class="info-editing__birthday">
+                    <input type="text" id="birthday" placeholder="Дата Рождения">
+                  </div>
+                  <div class="info-editing__tel">
+                    <label for="tel">Номер телефона</label>
+                    <input type="tel" id="tel" placeholder="+7 ( _ _ _ )  _ _ _  _ _  _ _">
+                    <button type="button">Добавить номер телефона</button>
+                  </div>
+                  <div class="info-editing__location">
+                    <select class="location__country">
+                      <option selected>Страна</option>
+                    </select>
+                    <select class="location__sity">
+                      <option selected>Город</option>
+                    </select>
+                  </div>
+                  <div class="info-editing__email">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="elenpavl@mail.ru">
+                  </div>
+                  <div class="info-editing__language">
+                    <p>Иностранные языки</p>
+                    <select>
+                      <option id="language" selected>Русский, Французский</option>
+                    </select>
+                  </div>
+                  <div class="info-editing__edit-buttons">
+                    <button class="info-editing__button-edit">Редактировать данные</button>
+                    <button class="info-editing__button-delete">Удалить</button>
+                  </div>
+                  <div class="info-editing__personal-data">
+                    <input class="visually-hidden" type="checkbox" checked>
+                    <label>Согласие на обработку персональных данных</label>
+                  </div>
+                  <button class="info-editing__save" type="button">Сохранить изменения</button>
+                </fieldset>
+              </form>
             </div>
           </div>
-
-          <div class="avatar-editing content-item__container">
-            <form class="avatar-editing__block">
-              <legend class="avatar-editing__title">Аватар и обложка</legend>
-              <p class="avatar-editing__caption">
-                Загрузите изображения для аватара и обложки вашей домашней страницы. Так вам будет легче найти новых друзей. Результат ваших действий вы сможете увидеть наверху страницы. 
-              </p>
-              <div class="avatar-editing__upload-fields">
-                <div class="avatar-editing__upload-avatar">
-                  <p class="avatar-editing__field-title">Фото на аватар</p>
-                  <label class="avatar-editing__field-label" for="upload-avatar"></label>
-                  <input class="avatar-editing__avatar visually-hidden" type="file" name="upload-avatar" id="upload-avatar">
-                </div>
-                <div class="avatar-editing__upload-cover">
-                  <p class="avatar-editing__field-title">Обложка персональной страницы</p>
-                  <label class="avatar-editing__field-label" for="upload-cover"></label>
-                  <input class="avatar-editing__cover visually-hidden" type="file" name="upload-cover" id="upload-cover">
-                </div>
+  
+          <div class="profile">
+            <div class="profile__content">
+              <div class="profile__avatar-container">
+                <img class="profile__avatar" src="image/avatar.jpg" width="150" height="150" alt="Аватар пользователя">
+                <p class="profile__status">Арендодатель</p>
+                <p class="profile__name">Иванова Елена Павловна</p>
               </div>
-              <button class="avatar-editing__button" type="button">Сохранить изменения</button>
-            </form>
-          </div>
-
-          <div class="info-editing content-item__container">
-            <form class="info-editing__block">
-              <legend class="info-editing__title">Личные данные</legend>
-              <div class="info-editing__name">
-                <label for="name">Фамилия/ Имя / Отчество</label>
-                <input type="text" id="name" placeholder="Иванова Елена Павловна">
+              <div class="profile__info">
+                <p class="profile__info-title">
+                  <strong>Имя на сайте</strong>
+                </p>
+                <p>Elena Pavlovna</p>
               </div>
-              <div class="info-editing__site-name">
-                <label for="site-name">Имя на сайте</label>
-                <input type="text" id="site-name" placeholder="Elena Pavlovna">
+              <div class="profile__info">
+                <p class="profile__info-title">
+                  <strong>Контактный телефон</strong>
+                </p>
+                <p>+7 (891) 245-65-67</p>
               </div>
-              <div class="info-editing__birthday">
-                <input type="text" id="birthday" placeholder="Дата Рождения">
+              <div class="profile__info">
+                <p class="profile__info-title">
+                  <strong>Дата рождения</strong>
+                </p>
+                <p>23.09.1970</p>
               </div>
-              <div class="info-editing__tel">
-                <label for="tel">Номер телефона</label>
-                <input type="tel" id="tel" placeholder="+7 ( _ _ _ )  _ _ _  _ _  _ _">
-                <button type="button">Добавить номер телефона</button>
+              <div class="profile__info">
+                <p class="profile__info-title">
+                  <strong>E-mail</strong>
+                </p>
+                <p>elenpavl@mail.ru</p>
               </div>
-              <div class="info-editing__location">
-                <select class="location__country">
-                  <option selected>Страна</option>
-                </select>
-                <select class="location__sity">
-                  <option selected>Город</option>
-                </select>
+              <div class="profile__info">
+                <p class="profile__info-title">
+                  <strong>Страна, город</strong>
+                </p>
+                <p>Россия, Сочи</p>
               </div>
-              <div class="info-editing__email">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="elenpavl@mail.ru">
+              <div class="profile__info">
+                <p class="profile__info-title">
+                  <strong>Иностранные языки</strong>
+                </p>
+                <p>Русский, Французкий</p>
               </div>
-              <div class="info-editing__language">
-                <label for="language">Иностранные языки</label>
-                <select>
-                  <option id="language" selected>Русский, Французский</option>
-                </select>
-              </div>
-              <div class="info-editing__edit-buttons">
-                <button class="info-editing__button-edit">Редактировать данные</button>
-                <button class="info-editing__button-delete">Удалить</button>
-              </div>
-              <div class="info-editing__personal-data">
-                <input class="visually-hidden" type="checkbox" checked>
-                <label>Согласие на обработку персональных данных</label>
-              </div>
-              <button class="info-editing__save" type="submit">Сохранить изменения</button>
-            </form>
+            </div>
+            <button class="profile__edit-button">Редактировать профиль</button>
           </div>
         </div>
-
-        <div class="profile">
-          <div class="profile__content">
-            <div class="profile__avatar-container">
-              <img class="profile__avatar" src="image/avatar.jpg" width="150" height="150">
-              <p class="profile__status">Арендодатель</p>
-              <p class="profile__name">Иванова Елена Павловна</p>
-            </div>
-            <div class="profile__info">
-              <p class="profile__info-title">
-                <strong>Имя на сайте</strong>
-              </p>
-              <p>Elena Pavlovna</p>
-            </div>
-            <div class="profile__info">
-              <p class="profile__info-title">
-                <strong>Контактный телефон</strong>
-              </p>
-              <p>+7 (891) 245-65-67</p>
-            </div>
-            <div class="profile__info">
-              <p class="profile__info-title">
-                <strong>Дата рождения</strong>
-              </p>
-              <p>23.09.1970</p>
-            </div>
-            <div class="profile__info">
-              <p class="profile__info-title">
-                <strong>E-mail</strong>
-              </p>
-              <p>elenpavl@mail.ru</p>
-            </div>
-            <div class="profile__info">
-              <p class="profile__info-title">
-                <strong>Страна, город</strong>
-              </p>
-              <p>Россия, Сочи</p>
-            </div>
-            <div class="profile__info">
-              <p class="profile__info-title">
-                <strong>Иностранные языки</strong>
-              </p>
-              <p>Русский, Французкий</p>
-            </div>
-          </div>
-          <button class="profile__edit-button">Редактировать профиль</button>
-        </div>
+        
       </section>
     </main>
 
@@ -364,19 +367,23 @@
         </div>
         <div class="footer__feedback footer__column-container">
           <form class="footer__form">
-            <legend class="footer__title">Обратная связь</legend>
-            <div class="footer__form-container">
-              <input type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
-              <input type="email" name="email" placeholder="Email" autocomplete="off" required>
-              <input type="text" name="comment" placeholder="Оставьте комментарий" autocomplete="off" required></textarea>
-              <p class="footer__concept-caption">
-                Нажимая «Отправить», даю согласие на обработку персональных данных
-              </p>
-              <button type="submit" class="footer__submit">Отправить</button>
-            </div>
+            <fieldset>
+              <legend class="footer__title">Обратная связь</legend>
+              <div class="footer__form-container">
+                <input type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
+                <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                <input type="text" name="comment" placeholder="Оставьте комментарий" autocomplete="off" required>
+                <p class="footer__concept-caption">
+                  Нажимая «Отправить», даю согласие на обработку персональных данных
+                </p>
+                <button type="button" class="footer__submit">Отправить</button>
+              </div>
+            </fieldset>
           </form>
         </div>
       </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

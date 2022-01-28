@@ -46,6 +46,11 @@ button {
     padding: 0;
 }
 
+fieldset {
+    padding: 0;
+    border: none;
+}
+
 header,
 main,
 footer {
@@ -159,7 +164,7 @@ header a:focus {
 .main-block {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: start;
     margin-top: 53px;
     padding-bottom: 80px;
 
@@ -168,6 +173,7 @@ header a:focus {
 
 .main-menu {
     width: 145px;
+    margin-left: 50px;
 }
 .main-menu__item {
     position: relative;
@@ -199,8 +205,13 @@ header a:focus {
     margin-bottom: 20px;
 }
 
+.content-items {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .content-item {
-    margin-right: 20px;
+    margin-left: 40px;
 }
 
 .content-item__container {
@@ -363,6 +374,7 @@ header a:focus {
 
 .profile {
     width: 270px;
+    height: 773px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -690,7 +702,8 @@ footer {
     margin-bottom: 15px;
 }
 
-.info-editing__block label {
+.info-editing__block label,
+.info-editing__language p {
     font-size: 14px;
     line-height: 20px;
     opacity: 0.6;
@@ -821,4 +834,18 @@ footer {
 
 .info-editing__save {
     margin-top: 0;
+}
+
+.avatar-editing,
+.info-editing {
+    display: none;
+}
+
+.avatar-editing {
+    margin-bottom: 27px;
+}
+
+.personal-info__reviews,
+.personal-info__main-info {
+    padding-bottom: 40px;
 }
