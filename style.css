@@ -564,12 +564,13 @@ footer {
     color: #3B89D6;
 }
 
-.avatar-editing__block {
-    display: block;
+.avatar-editing__block,
+.info-editing__block {
     padding: 40px;
 }
 
-.avatar-editing__title {
+.avatar-editing__title,
+.info-editing__title {
     margin: 0;
     font-size: 25px;
     font-weight: normal;
@@ -668,7 +669,8 @@ footer {
     background-position: center;
 }
 
-.avatar-editing__button {
+.avatar-editing__button,
+.info-editing__save {
     margin-top: 185px;
     width: 270px;
     height: 60px;
@@ -678,4 +680,145 @@ footer {
     font-size: 16px;
     line-height: 20px;
     color: white;
+}
+
+.info-editing__block {
+    width: 369px;
+}
+
+.info-editing__title {
+    margin-bottom: 15px;
+}
+
+.info-editing__block label {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.info-editing__block input,
+.info-editing__block select {
+    border: 1px solid #DADADA;
+    padding: 10px 11px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.info-editing__block div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+}
+
+.info-editing__birthday input {
+    background-image: url(image/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 17px;
+}
+
+.info-editing__tel button {
+    position: relative;
+    text-align: start;
+    padding-left: 24px;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0066CC;
+}
+
+.info-editing__tel button::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 0;
+    background-image: url(image/dob_ico.png);
+    background-repeat: no-repeat;
+}
+
+.info-editing__block .info-editing__location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-editing__location .location__country {
+    margin-right: 10px;
+}
+
+.info-editing__location select {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(image/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 17px;
+}
+
+.info-editing__language select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(image/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 17px;
+}
+
+.info-editing__block .info-editing__edit-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.info-editing__button-edit {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.info-editing__button-delete {
+    font-size: 16px;
+    line-height: 25px;
+    color: #0066CC;
+}
+
+.info-editing__block .info-editing__personal-data {
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.info-editing__personal-data label {
+    margin-left: 30px;
+    position: relative;
+}
+
+.info-editing__personal-data label::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: -30px;
+    background-color: #555555;
+    opacity: 0.3;
+}
+
+.info-editing__personal-data label::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: -26px;
+    background-image: url(image/check-box.png);
+    background-repeat: no-repeat;
+}
+
+.info-editing__save {
+    margin-top: 0;
 }

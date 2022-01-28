@@ -147,8 +147,8 @@
           </div>
 
           <div class="avatar-editing content-item__container">
-            <div class="avatar-editing__block">
-              <h3 class="avatar-editing__title">Аватар и обложка</h3>
+            <form class="avatar-editing__block">
+              <legend class="avatar-editing__title">Аватар и обложка</legend>
               <p class="avatar-editing__caption">
                 Загрузите изображения для аватара и обложки вашей домашней страницы. Так вам будет легче найти новых друзей. Результат ваших действий вы сможете увидеть наверху страницы. 
               </p>
@@ -165,11 +165,56 @@
                 </div>
               </div>
               <button class="avatar-editing__button" type="button">Сохранить изменения</button>
-            </div>
+            </form>
           </div>
 
-          <div class="content-item__container">
-            Личные данные
+          <div class="info-editing content-item__container">
+            <form class="info-editing__block">
+              <legend class="info-editing__title">Личные данные</legend>
+              <div class="info-editing__name">
+                <label for="name">Фамилия/ Имя / Отчество</label>
+                <input type="text" id="name" placeholder="Иванова Елена Павловна">
+              </div>
+              <div class="info-editing__site-name">
+                <label for="site-name">Имя на сайте</label>
+                <input type="text" id="site-name" placeholder="Elena Pavlovna">
+              </div>
+              <div class="info-editing__birthday">
+                <input type="text" id="birthday" placeholder="Дата Рождения">
+              </div>
+              <div class="info-editing__tel">
+                <label for="tel">Номер телефона</label>
+                <input type="tel" id="tel" placeholder="+7 ( _ _ _ )  _ _ _  _ _  _ _">
+                <button type="button">Добавить номер телефона</button>
+              </div>
+              <div class="info-editing__location">
+                <select class="location__country">
+                  <option selected>Страна</option>
+                </select>
+                <select class="location__sity">
+                  <option selected>Город</option>
+                </select>
+              </div>
+              <div class="info-editing__email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="elenpavl@mail.ru">
+              </div>
+              <div class="info-editing__language">
+                <label for="language">Иностранные языки</label>
+                <select>
+                  <option id="language" selected>Русский, Французский</option>
+                </select>
+              </div>
+              <div class="info-editing__edit-buttons">
+                <button class="info-editing__button-edit">Редактировать данные</button>
+                <button class="info-editing__button-delete">Удалить</button>
+              </div>
+              <div class="info-editing__personal-data">
+                <input class="visually-hidden" type="checkbox" checked>
+                <label>Согласие на обработку персональных данных</label>
+              </div>
+              <button class="info-editing__save" type="submit">Сохранить изменения</button>
+            </form>
           </div>
         </div>
 
